@@ -1,88 +1,19 @@
-:root {
-  --primary-font: "Roboto", sans-serif;
-  --second-family: "Raleway", sans-serif;
-  --iris: #4d5ae5;
-  --ocean: #404bbf;
-  --navy-blue: #2e2f42;
-  --green: #31d0aa;
-  --slate: #434455;
-  --light-slate: #8e8f99;
-  --cornflower: #e7e9fc;
-  --cloud: #f4f4fd;
-  --navy-blue-modal: #2e2f4266;
-  --grey: #2e2f42b3;
-  --white: #fff;
-}
+/* Властивість font-family успадковується більшістю елементів, тому його задають елементу body */
 
-/* Або modern-normalize або
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
+/* Спочатку типографіка(+ :active, :hover, :focus): color, background-color, font-family, font-size, line-height, font-weight, font-style, text: text-decoration, text-transform, text-align, letter-spacing, text-indent (абзац), text-shadow: <зміщення по x>, <зміщення по y>, <радіус розмиття>, <колір>,    */
+
+/* line-height: 1.5;-Використання множника гарантує рівномірне масштабування інтервалу між рядками при зміні розміру тексту. */
+
+/* Глобальні стилі документа */
+
+/* body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  color: #2a2a2a;(крім посилань)
+  background-color: #fafafa;
 } */
 
-/* !!! Глобальні стилі документа !!! */
-
-/* background-color: rgb(0 255 0 / 10%); прозорий, щоб було видно накладки */
-
-/* !!! Ховаємо заголовок !!! */
-
-/* .visually-hidden {
-  position: absolute;
-  overflow: hidden;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  border: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-} */
-.visually-hidden {
-  position: absolute;
-  overflow: hidden;
-  /* stylelint-disable-next-line property-no-deprecated */
-  clip: rect(0 0 0 0);
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  border: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-}
-
-/* !!! Обнуляємо маржини заголовків та параграфів «B1» !!! */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  margin: 0;
-}
-
-/* !!! Прибираємо нижне підкреслення для посилань!!! */
-a {
-  text-decoration: none;
-}
-
-ul {
-  /* !!! Глобальне скидання стилів для списків(падінги, марджини, індекси) «B1» !!! */
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
-
-/* !!!Прибираємо курсив для тегу address !!! */
-address {
-  font-style: normal;
-}
-
-/*  body  */
-
-/* Властивість font-family,font-size, font-weight, line-height, letter-spacing, text-align, background-color успадковується більшістю елементів, тому його задають елементу body */
+/* !!! body !!!
 body {
   font-family: var(--primary-font);
   font-size: 16px;
@@ -91,314 +22,288 @@ body {
   letter-spacing: 0.02em;
   text-align: center;
   color: var(--slate);
-  background-color: var(--color-white);
 
-  /* !!! Обнуляємо стандартний margin елемента body - 8px з усіх боків !!! */
+  background-color: var(--color-white);
+} */
+
+/* Якщо вам важко запам’ятати, де використовувати падінг, а де маржин, під час верстки задавайте всім елементам колір фону, адже він поширюється тільки на вміст, падінг і рамку, але не на маржини. Так буде візуально зрозуміло. Після того, як верстка виконана, видаліть із CSS-правил допоміжні властивості кольору фона. */
+
+/*  Не використовувати верхній марджин!
+div {
+  margin-bottom: 20px;
+} */
+
+/*  Відцентрувати елемент!
+div {
+  margin: 0 auto;
+} */
+
+/* У CSS створюється клас, зазвичай container, який можна задати будь-якому елементу, але на практиці це найчастіше буде тег <div> . Контейнеру обов'язково задаються
+ширина за макетом
+автоматичні горизонтальні маржини та
+необов'язкові горизонтальні падінги, також згідно макету.
+
+.container {
+  width: 480px;
+  margin: 0 auto;
+  padding: 0 15px;
+} */
+
+/* img {
+	display: block;
+  max-width: 100%;
+} */
+
+/* .thumb {
+  height: 400px;
+  width: 300px;
+} */
+
+/* .thumb img {
+  height: 100%;
+  width: 100%;
+	object-fit: cover;
+} */
+
+/* .card-set {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+} */
+
+/* 100% - кількість_проміжків_у_рядку * значення_одного_проміжку) / кількість_елементів_у_рядку */
+
+/* .item {
+  width: calc((100% - 20px) / 3);
+} */
+
+/* .page-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+} */
+
+/* !! + !! */
+
+/* main {
+  flex-grow: 1;
+} */
+
+/* Для елементів списків */
+
+/* .list-item:not(:last-child) {
+  margin-bottom: 20px;
+} */
+
+/* !!! logo !!! */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Poppins, sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #212121;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   margin: 0;
 }
 
-.container {
-  max-width: 1158px; /* «B8»  */
-
-  /* !!! Центруємо контент !!! */
-  margin: 0 auto;
-
-  /* !!! Задаємо падінги контейнеру !!! */
-  padding: 0 15px;
+main {
+  flex-grow: 1;
 }
 
-section {
-  padding: 120px 0; /* «B15» */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Oswald, sans-serif;
+  margin: 0;
 }
 
-/* .thumb {
-  overflow: hidden;
-} */
+p {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
 
 img {
-  /* !!! Прибираємо нижній проміжок !!! */
   display: block;
-
-  /* !!! Робимо щоб зображення не виходило за межі батьківського елемента !!! */
   max-width: 100%;
-
-  /* !!! Робимо щоб висота зображення автоматично підлаштовувалася під ширину !!! */
-  height: auto;
-
-  /* !!! Задаємо властивість, щоб зображення не спотворювалося !!! */
   object-fit: cover;
 }
 
-/* header */
-.header {
-  border-bottom: 1px solid var(--cornflower);
-}
-
-.header .container {
-  /* !!! Всі елементи в одну лінію !!! */
-  display: flex;
-
-  /*   !!! Розподіляємо елементи по головній осі з максимальним проміжком !!! */
-  justify-content: space-between;
-
-  /* !!! Вирівнюємо елементи по центру вздовж поперечної осі !!! */
-  align-items: center;
-}
-
-/*  logo  */
-.logo {
-  font-family: var(--second-family);
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--iris);
-  margin-right: 76px;
-  padding: 24px 0;
-}
-
-.accent {
-  color: var(--navy-blue);
-}
-
-/*  nav  */
-.nav {
-  display: flex;
-  align-items: center;
-}
-
-.nav-list {
-  display: flex;
-  gap: 40px;
-}
-
-.nav-link {
-  font-weight: 500;
-  color: var(--navy-blue);
-  padding: 24px 0;
-}
-
-/* Hover/Focus ефекти */
-.nav-link:hover,
-.nav-link:focus {
-  color: var(--ocean);
-}
-
-/*  address  */
-.contacts-list {
-  display: flex;
-  align-items: center;
-  gap: 40px;
-}
-
-.contacts .contacts-link {
-  color: var(--slate);
-}
-
-.contacts-link:hover,
-.contacts-link:focus {
-  color: var(--ocean);
-}
-
-/*  hero  */
-.hero {
-  background: var(--navy-blue);
-  width: 100%;
-  padding: 188px 0;
-}
-
-.hero-title {
-  font-size: 56px;
-  font-weight: 700;
-  line-height: 1.07;
-  letter-spacing: 0.02em;
-  color: var(--white);
-  background: var(--navy-blue);
-  max-width: 496px;
-  margin: 0 auto 48px;
-}
-
-/*  hero-btn  */
-.hero-btn {
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
-  color: var(--white);
-  background: var(--iris);
-
-  /* !!! Включаємо блочну модель !!! */
-  display: block;
-  min-width: 169px;
-  height: 56px;
+.container {
+  max-width: 960px;
   margin: 0 auto;
-
-  padding: 16px 32px;
-  border: none;
-  border-radius: 4px;
-  box-shadow: 0 4px 4px 0 rgb(0 0 0 / 15%);
-  cursor: pointer;
+  padding: 0 16px;
 }
 
-.hero-btn:hover,
-.hero-btn:focus {
-  font-weight: 600;
-  background: var(--ocean);
+.page-header {
+  background-color: #e0e0e0;
+  margin-bottom: 20px;
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 
-.hero-btn:active {
-  background: var(--ocean);
-}
-
-/*  features  */
-.features-list {
-  text-align: left;
+.page-header .container {
   display: flex;
-  gap: 24px;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.features-item {
-  /* !!! Встановлюємо базовий розмір flex-елемента: 4 елементи в рядок із проміжком 72px між ними !!! */
-  flex-basis: calc((100% - 72px) / 4);
-}
-
-.features-subtitle {
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  color: var(--navy-blue);
-  margin-bottom: 8px;
-}
-
-.features-text {
-  color: var(--slate);
-}
-
-/*  team  */
-.team {
-  background-color: var(--cloud);
-}
-
-.team-list {
+.page-nav {
   display: flex;
-  gap: 24px;
+  gap: 8px;
 }
 
-.team-item {
-  background-color: var(--white);
-  flex-basis: calc((100% - 72px) / 4);
-
-  border-radius: 0 0 4px 4px;
-  box-shadow:
-    0 2px 1px 0 rgb(46 47 66 / 8%),
-    0 1px 1px 0 rgb(46 47 66 / 16%),
-    0 1px 6px 0 rgb(46 47 66 / 8%);
-}
-
-.team-item:hover,
-.team-item:focus {
-  background: var(--white);
-}
-
-.team-title {
-  font-size: 36px;
-  font-weight: 700;
-  line-height: 1.11;
-  letter-spacing: 0.02em;
-  text-transform: capitalize;
-  color: var(--navy-blue);
-  margin-bottom: 72px;
-}
-
-.team-descr {
-  padding: 32px 0;
-}
-
-.team-subtitle {
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  color: var(--navy-blue);
-  margin-bottom: 8px;
-}
-
-.team-text {
-  color: var(--slate);
-}
-
-/*  portfolio  */
-
-.portfolio-title {
-  font-size: 36px;
-  font-weight: 700;
-  line-height: 1.11;
-  letter-spacing: 0.02em;
-  text-transform: capitalize;
-  color: var(--navy-blue);
-  margin-bottom: 72px;
-}
-
-.portfolio-list {
-  display: flex;
-
-  /* !!! Дозволяємо перенесення flex-елементів на новий рядок !!! */
-  flex-wrap: wrap;
-  gap: 24px;
-  row-gap: 48px;
-}
-
-.portfolio-item {
-  flex-basis: calc((100% - 48px) / 3);
-  border-bottom: 1px solid var(--cornflower);
-}
-
-.portfolio-descr {
-  padding: 32px 16px;
-  border: 1px solid #e7e9fc;
-  border-top: none;
-}
-
-.portfolio-subtitle {
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  color: var(--navy-blue);
-  margin-bottom: 8px;
-}
-
-.portfolio-text {
-  color: var(--slate);
-}
-
-/*  footer  */
-.footer {
-  text-align: left;
-  background: var(--navy-blue);
-  width: 100%;
-  padding: 100px 0;
-}
-
-.footer-logo {
-  font-family: var(--second-family);
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 1.1667;
-  letter-spacing: 0.03em;
+.page-nav .link {
+  font-size: 14px;
+  text-decoration: none;
   text-transform: uppercase;
-  color: var(--iris);
-  display: inline-block;
-  margin-bottom: 16px;
+  color: #03a9f4;
+  display: block;
+  padding: 4px 8px;
 }
 
-.accent-footer {
-  color: var(--cloud);
+.downloads .link {
+  text-decoration: none;
+  color: #03a9f4;
 }
 
-.footer-text {
-  color: var(--cloud);
-  max-width: 264px;
+.club-list .link {
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  color: #03a9f4;
+}
+
+.page-nav .link:hover,
+.page-nav .link:focus {
+  color: #0288d1;
+}
+
+.page-nav .link:active {
+  color: #f44336;
+}
+
+.page-title {
+  font-size: 32px;
+  line-height: 1.333;
+  letter-spacing: 3px;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.section {
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 2px dashed #212121;
+}
+
+.section-title {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.333;
+  letter-spacing: 1px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.club-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.club-list .item {
+  flex-basis: calc((100% - 24px) / 3);
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.club-list .title {
+  font-size: 16px;
+  line-height: 1.333;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.club-list .link:hover,
+.club-list .link:focus {
+  color: #0288d1;
+}
+
+.club-list .link:active {
+  color: #f44336;
+}
+
+.downloads .link:hover,
+.downloads .link:focus {
+  text-decoration: underline;
+  color: #0288d1;
+}
+
+.downloads .link:active {
+  color: #f44336;
+}
+
+.benefits {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 20px;
+  margin-bottom: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.benefits .item {
+  flex-basis: calc((100% - 32px) / 3);
+}
+
+.downloads {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 20px;
+}
+
+.downloads .item:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.page-footer {
+  background-color: #212121;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.page-footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.copyright-text {
+  color: #fff;
+  flex-basis: 300px;
+}
+
+.social-links {
+  display: flex;
+  flex-shrink: 0;
+  gap: 8px;
+  align-self: flex-end;
 }

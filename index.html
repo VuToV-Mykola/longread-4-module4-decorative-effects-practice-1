@@ -8,423 +8,402 @@
     <!-- Українською: Кодування символів (UTF-8 підтримує всі мови) / English: Character encoding (UTF-8 supports all languages) -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Українською: Налаштування адаптивного дизайну / English: Responsive design settings -->
-    <!--!!! TITLE !!!-->
-    <title>WEBSTUDIO</title>
+
+    <title>Planet Fatness is the place for beginners and pros!</title>
     <!-- Українською: Заголовок сторінки (вкладка браузера) / English: Page title (browser tab) -->
-    <!--!!! MODERN NORMALIZE !!!-->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
-      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer">
-    <!--!!! FONTS !!!-->
+    <meta name="description" content="Planet Fatness description meta tag content">
+    <!-- Українською: Опис сторінки для SEO / English: Page description for SEO -->
+    <!--!!! FONTs !!!-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,700;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Poppins:wght@400;500&display=swap"
       rel="stylesheet">
-    <!--!!! STYLES !!!-->
+    <!--!!! STYLE !!!-->
     <link rel="stylesheet" href="./css/style.css">
     <!-- Українською: Підключення CSS стилів / English: CSS stylesheet link -->
   </head>
   <!--!!! BODY !!!-->
   <body class="page">
-    <!-- Українською: Універсальний контейнер / English: Universal container -->
     <!--!!! HEADER !!!-->
-    <header class="header">
+    <header class="page-header">
       <!-- Українською: Верхня частина сторінки (лого, навігація) / English: Top section (logo, navigation) -->
       <div class="container">
         <!-- Українською: Універсальний контейнер / English: Universal container -->
-        <nav class="nav">
+        <a href="/" class="link" target="_self" rel="noopener">
+          <!-- Українською: Гіперпосилання / English: Hyperlink -->
+          <img
+            src="https://ac.goit.global/fullstack/html-css-v2/module-1/autocheck/b04pflogo.svg"
+            alt="Planet Fatness logo"
+            class="image"
+            width="40"
+            height="40"
+            loading="lazy">
+          <!-- Українською: Зображення / English: Image -->
+        </a>
+        <nav class="navigation" aria-label="Main navigation">
           <!-- Українською: Блок навігації / English: Navigation block -->
-          <!-- !!!Logo!!! -->
-          <a class="logo" href="./index.html" target="_self" rel="noopener"
-            >Web<span class="accent">Studio</span></a
-          >
-          <ul class="nav-list">
+          <ul class="page-nav">
             <!-- Українською: Ненумерований список / English: Unordered List -->
-            <li class="nav-item">
+            <li class="unordered-list">
               <!-- Українською: Елемент списку / English: List item -->
-              <a class="nav-link" href="./index.html">
-                <!-- Українською: Навігаційне посилання / English: Navigation link -->
-                Studio
+              <a href="#clubs" class="link" target="_self" rel="noopener">
+                <!-- Українською: Гіперпосилання / English: Hyperlink -->
+                Our Clubs
               </a>
             </li>
-            <li class="nav-item">
+            <li class="unordered-list">
               <!-- Українською: Елемент списку / English: List item -->
-              <a class="nav-link" href="">
-                <!-- Українською: Навігаційне посилання / English: Navigation link -->
-                Portfolio
+              <a href="#benefits" class="link" target="_self" rel="noopener">
+                <!-- Українською: Гіперпосилання / English: Hyperlink -->
+                PF Benefits
               </a>
             </li>
-            <li class="nav-item">
+            <li class="unordered-list">
               <!-- Українською: Елемент списку / English: List item -->
-              <a class="nav-link" href="">
-                <!-- Українською: Навігаційне посилання / English: Navigation link -->
-                Contacts
+              <a href="#programs" class="link" target="_self" rel="noopener">
+                <!-- Українською: Гіперпосилання / English: Hyperlink -->
+                Tips and Programs
               </a>
             </li>
           </ul>
         </nav>
-        <address class="contacts">
-          <!-- Українською: Контактна інформація / English: Contact Information -->
-          <ul class="contacts-list">
-            <!-- Українською: Ненумерований список / English: Unordered List -->
-            <li class="contacts-item">
-              <!-- Українською: Елемент списку / English: List item -->
-              <a
-                class="contacts-link"
-                href="mailto:info@devstudio.com"
-                target="_blank"
-                rel="noopener">
-                <!-- Українською: Гіперпосилання / English: Hyperlink -->
-                info@devstudio.com
-              </a>
-            </li>
-            <li class="contacts-item">
-              <!-- Українською: Елемент списку / English: List item -->
-              <a class="contacts-link" href="tel:+110001111111" target="_blank" rel="noopener">
-                <!-- Українською: Гіперпосилання / English: Hyperlink -->
-                +11 (000) 111-11-11
-              </a>
-            </li>
-          </ul>
-        </address>
       </div>
-      <!-- !!!Navigation!!! -->
     </header>
     <!--!!! MAIN !!!-->
     <main class="main">
-      <!-- Українською: Основний вміст сторінки / English: Main page content -->
-
-      <!-- !!!section HERO!!! -->
-      <section class="hero section">
+      <div class="container">
+        <!-- Українською: Універсальний контейнер / English: Universal container -->
+        <!-- Українською: Основний вміст сторінки / English: Main page content -->
+        <h1 class="page-title" id="hero">
+          <!-- Українською: Заголовок 1 рівня / English: Heading level 1 -->
+          Planet Fatness
+        </h1>
+        <p class="paragraph">
+          <!-- Українською: Абзац / English: Paragraph -->
+          Healthy food is delicious. Doing sport is enjoyable. You just need to start - people said.
+          Nonsense! - I thought. To me, a 19-year-old guy, overweight and depressed, who ate tons of
+          junk food to seize the stress, those healthy-life-gurus sounded like aliens coming from
+          another planet. On their planet, it must have sounded right. On my planet, eating pizza
+          was OK and jogging was exhausting. 12 years later, after I shed almost 100 pounds and
+          completely changed my diet, I still believe we WERE on different planets. The thing is
+          that once I escaped.
+        </p>
+        <p class="paragraph">
+          <!-- Українською: Абзац / English: Paragraph -->
+          Now I'm a coach with 7+ years of experience who founded the chain of sport clubs each
+          having a fitness bar and assistance of psychologists, and dietitians. I'm sure that
+          nothing will work until you know where you are and where you go. Possibly, you are now on
+          the planet Fatness and want to escape it. Here I am to show you the way out. The gym
+          itself is the spacecraft for you to reach a happy new life, with its fitness bars to adapt
+          your body to new conditions and with friendly crew to motivate you and help on your way.
+        </p>
+      </div>
+      <section class="section container">
         <!-- Українською: Тематична група контенту / English: Thematic content group -->
-        <div class="container">
-          <!-- Українською: Універсальний контейнер / English: Universal container -->
-          <h1 class="hero-title" id="studio">Effective Solutions for Your Business</h1>
-          <button class="hero-btn" type="button">
-            <!-- Українською: Кнопка / English: Button -->
-            Order Service
-          </button>
-        </div>
+
+        <h2 class="section-title" id="clubs">
+          <!-- Українською: Заголовок 2 рівня / English: Heading level 2 -->
+          Find us near you
+        </h2>
+        <p class="section-text">
+          <!-- Українською: Абзац / English: Paragraph -->
+          Get healthy, feel strong, and be happy! With 50+ classes on the menu, including HIIT
+          classes, group fitness, and Personal Training, we have something for every taste. All the
+          gyms and fitness studios in our chain are well-equipped facilities where you'll find all
+          the amenities from WiFi, lockers and towels to sauna and jacuzzi. Our fitness bars are
+          here to help you relax and refuel after your workout. The menu offers smoothies. soups,
+          salads, and other healthy snacks prepared fresh daily. See where we're currently
+          operating.
+        </p>
+        <ul class="club-list">
+          <!-- Українською: Ненумерований список / English: Unordered List -->
+          <li class="item">
+            <!-- Українською: Елемент списку / English: List item -->
+            <img
+              src="https://ac.goit.global/fullstack/html-css-v2/module-1/autocheck/B031.jpg"
+              alt="F Power Zone. A modern gym equipped with treadmills."
+              class="image"
+              width="320"
+              loading="lazy">
+            <!-- Українською: Зображення / English: Image -->
+            <h3 class="title">
+              <!-- Українською: Заголовок 3 рівня / English: Heading level 3 -->
+              PF Power Zone
+            </h3>
+            <p class="text">
+              <!-- Українською: Абзац / English: Paragraph -->
+              With full access membership you'll gain access to our state of the art gym floor and
+              become a part of a supportive fitness community. Feel confident and strong, with
+              equipment to challenge every level of fitness.
+            </p>
+            <a
+              href="https://goo.gl/maps/qBnEfK5AingPLZgb9"
+              class="link"
+              target="_blank"
+              rel="noopener">
+              <!-- Українською: Гіперпосилання / English: Hyperlink -->
+
+              Open in Google Maps
+            </a>
+          </li>
+          <li class="item">
+            <!-- Українською: Елемент списку / English: List item -->
+            <img
+              src="https://ac.goit.global/fullstack/html-css-v2/module-1/autocheck/B032.jpg"
+              alt="PF Fit and Fast. A gym with indoor bikes behind a glass door."
+              class="image"
+              width="320"
+              loading="lazy">
+            <!-- Українською: Зображення / English: Image -->
+            <h3 class="title">
+              <!-- Українською: Заголовок 3 рівня / English: Heading level 3 -->
+              PF Fit and Fast
+            </h3>
+            <p class="text">
+              <!-- Українською: Абзац / English: Paragraph -->
+              Small group training combines the focused attention of a private session with the
+              energy of a group. With up to 5 people, the groups have their own program, training
+              area and equipment.
+            </p>
+            <a
+              href="https://goo.gl/maps/WZ4K6XMvHU7FkgWB7"
+              class="link"
+              target="_blank"
+              rel="noopener">
+              <!-- Українською: Гіперпосилання / English: Hyperlink -->
+
+              Open in Google Maps
+            </a>
+          </li>
+          <li class="item">
+            <!-- Українською: Елемент списку / English: List item -->
+            <img
+              src="https://ac.goit.global/fullstack/html-css-v2/module-1/autocheck/B033.jpg"
+              alt="PF Body Sculpting. A studio with fitness balls and trx straps."
+              class="image"
+              width="320"
+              loading="lazy">
+            <!-- Українською: Зображення / English: Image -->
+            <h3 class="title">
+              <!-- Українською: Заголовок 3 рівня / English: Heading level 3 -->
+              PF Body Sculpting
+            </h3>
+            <p class="text">
+              <!-- Українською: Абзац / English: Paragraph -->
+              Our 1 on 1 private training is the best choice for people looking for a personalized
+              program based on their goals. You will have your own training room with one of our
+              experienced fitness coaches.
+            </p>
+            <a
+              href="https://goo.gl/maps/UZqkiUqS6eWL5DJd7"
+              class="link"
+              target="_blank"
+              rel="noopener">
+              <!-- Українською: Гіперпосилання / English: Hyperlink -->
+
+              Open in Google Maps
+            </a>
+          </li>
+        </ul>
       </section>
-
-      <!-- !!!section FEATURE!!! -->
-      <section class="features section">
+      <section class="section container">
         <!-- Українською: Тематична група контенту / English: Thematic content group -->
-        <div class="container">
-          <!-- Українською: Універсальний контейнер / English: Universal container -->
-          <h2 class="features-title visually-hidden" id="portfolio">FEATURE</h2>
-          <ul class="features-list">
-            <!-- Українською: Ненумерований список / English: Unordered List -->
-            <li class="features-item">
-              <!-- Українською: Елемент списку / English: List item -->
-              <h3 class="features-subtitle">
-                <!-- Українською: Заголовок 3 рівня / English: Heading level 3 -->
-                Strategy
-              </h3>
-              <p class="features-text">
-                <!-- Українською: Абзац / English: Paragraph -->
-                Our goal is to identify the business problem to walk away with the perfect and
-                creative solution.
-              </p>
-            </li>
-            <li class="features-item">
-              <!-- Українською: Елемент списку / English: List item -->
-              <h3 class="features-subtitle">
-                <!-- Українською: Заголовок 3 рівня / English: Heading level 3 -->
-                Punctuality
-              </h3>
 
-              <p class="features-text">
-                <!-- Українською: Абзац / English: Paragraph -->
-                Bring the key message to the brand's audience for the best price within the shortest
-                possible time.
-              </p>
-            </li>
-            <li class="features-item">
-              <!-- Українською: Елемент списку / English: List item -->
-              <h3 class="features-subtitle">
-                <!-- Українською: Заголовок 3 рівня / English: Heading level 3 -->
-                Diligence
-              </h3>
-              <p class="features-text">
-                <!-- Українською: Абзац / English: Paragraph -->
-                Research and confirm brands with the strongest digital growth opportunities and
-                minimize risk.
-              </p>
-            </li>
-            <li class="features-item">
-              <!-- Українською: Елемент списку / English: List item -->
-              <h3 class="features-subtitle">
-                <!-- Українською: Заголовок 3 рівня / English: Heading level 3 -->
-                Technologies
-              </h3>
+        <h2 class="section-title" id="benefits">
+          <!-- Українською: Заголовок 2 рівня / English: Heading level 2 -->
+          Why choose Planet Fatness?
+        </h2>
+        <p class="section-text">
+          <!-- Українською: Абзац / English: Paragraph -->
+          We're bringing accessible, on-trend fitness to everyone! We are more than just a gym - we
+          are a community. We are the crew to help you reach the goals.
+        </p>
+        <ol class="benefits">
+          <!-- Українською: Нумерований список / English: Ordered list -->
+          <li class="item">
+            <!-- Українською: Елемент списку / English: List item -->
+            No blames, no empty promises, no people who are talking about things they don't know
+            about. Our mission is to create a safe space for you to change.
+          </li>
+          <li class="item">
+            <!-- Українською: Елемент списку / English: List item -->
+            All our coaches are certified experts. You may have tried to work hard but we'll teach
+            you to work smart.
+          </li>
+          <li class="item">
+            <!-- Українською: Елемент списку / English: List item -->
+            Your diet is no less important than your training. We believe in an integrated approach
+            which also includes dietitian's consultations and motivational activities.
+          </li>
+          <li class="item">
+            <!-- Українською: Елемент списку / English: List item -->
 
-              <p class="features-text">
-                <!-- Українською: Абзац / English: Paragraph -->
-                Design practice focused on digital experiences. We bring forth a deep passion for
-                problem-solving.
-              </p>
-            </li>
-          </ul>
-        </div>
+            Healthy menu require time and effort? Not in our healthy food bars. Let's discover the
+            world of tasty low-calorie dishes.
+          </li>
+          <li class="item">
+            <!-- Українською: Елемент списку / English: List item -->
+            You pay for reaching your goal. And it's our job to help you reach it as soon as
+            possible.
+          </li>
+        </ol>
+        <p class="paragraph">
+          <!-- Українською: Абзац / English: Paragraph -->
+          Do you want to know more? Contact us!
+        </p>
+        <address class="address">
+          <!-- Українською: Контактна інформація / English: Contact Information -->
+          Call us:
+          <a href="tel:+070174069900" class="link" target="_blank" rel="noopener">
+            <!-- Українською: Гіперпосилання / English: Hyperlink -->
+            +070174069900
+          </a>
+          <br>
+          Email us:
+          <a href="mailto:fatnessescape@doit.com" class="link" target="_blank" rel="noopener">
+            <!-- Українською: Гіперпосилання / English: Hyperlink -->
+            fatnessescape@doit.com
+          </a>
+          <br>
+
+          You may also want to visit us:
+          <br>
+          Lorem Foundation
+          <br>
+          332E Jacked Ave
+          <br>
+          Mountain View, CA 228322
+          <br>
+          USA
+        </address>
+        <button type="button" class="btn">
+          <!-- Українською: Кнопка / English: Button -->
+          Request a callback
+        </button>
       </section>
+      <section class="section container">
+        <!-- Українською: Тематична група контенту / English: Thematic content group -->
 
-      <!-- !!!section OUR TEAM!!! -->
-      <section class="team section">
-        <!-- Українською: Тематична група контенту / English: Thematic content group -->
-        <div class="container">
-          <!-- Українською: Універсальний контейнер / English: Universal container -->
-          <h2 class="team-title" id="contacts">Our Team</h2>
-          <ul class="team-list">
-            <!-- Українською: Ненумерований список / English: Unordered List -->
-            <!-- !!!!card Mark Guerrero!!!! -->
-            <li class="team-item">
-              <!-- Українською: Елемент списку / English: List item -->
-              <img
-                class="team-img"
-                src="./images/img-1.jpg"
-                alt="foto Mark Guerrero"
-                width="264"
-                height="260">
-              <!-- Українською: Зображення / English: Image -->
-              <div class="team-descr">
-                <!-- Українською: Універсальний контейнер / English: Universal container -->
-                <h3 class="team-subtitle">
-                  <!-- Українською: Заголовок 3 рівня / English: Heading level 3 -->
-                  Mark Guerrero
-                </h3>
-                <p class="team-text">
-                  <!-- Українською: Абзац / English: Paragraph -->
-                  Product Designer
-                </p>
-              </div>
-            </li>
-            <!-- !!!!card Tom Ford!!!! -->
-            <li class="team-item">
-              <!-- Українською: Елемент списку / English: List item -->
-              <img
-                class="team-img"
-                src="./images/img-2.jpg"
-                alt="foto Tom Ford"
-                width="264"
-                height="260">
-              <!-- Українською: Зображення / English: Image -->
-              <div class="team-descr">
-                <!-- Українською: Універсальний контейнер / English: Universal container -->
-                <h3 class="team-subtitle">
-                  <!-- Українською: Заголовок 3 рівня / English: Heading level 3 -->
-                  Tom Ford
-                </h3>
-                <p class="team-text">
-                  <!-- Українською: Абзац / English: Paragraph -->
-                  Frontend Developer
-                </p>
-              </div>
-            </li>
-            <!-- !!!!card Camila Garcia!!!! -->
-            <li class="team-item">
-              <!-- Українською: Елемент списку / English: List item -->
-              <img
-                class="team-img"
-                src="./images/img-3.jpg"
-                alt="foto Camila Garcia"
-                width="264"
-                height="260">
-              <!-- Українською: Зображення / English: Image -->
-              <div class="team-descr">
-                <!-- Українською: Універсальний контейнер / English: Universal container -->
-                <h3 class="team-subtitle">
-                  <!-- Українською: Заголовок 3 рівня / English: Heading level 3 -->
-                  Camila Garcia
-                </h3>
-                <p class="team-text">
-                  <!-- Українською: Абзац / English: Paragraph -->
-                  Marketing
-                </p>
-              </div>
-            </li>
-            <!-- !!!!card Daniel Wilson!!!! -->
-            <li class="team-item">
-              <!-- Українською: Елемент списку / English: List item -->
-              <img
-                class="team-img"
-                src="./images/img-4.jpg"
-                alt="foto Daniel Wilson"
-                width="264"
-                height="260">
-              <!-- Українською: Зображення / English: Image -->
-              <div class="team-descr">
-                <!-- Українською: Універсальний контейнер / English: Universal container -->
-                <h3 class="team-subtitle">
-                  <!-- Українською: Заголовок 3 рівня / English: Heading level 3 -->
-                  Daniel Wilson
-                </h3>
-                <p class="team-text">
-                  <!-- Українською: Абзац / English: Paragraph -->
-                  UI Designer
-                </p>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </section>
-      <!-- !!!section portfolio!!! -->
-      <section class="portfolio section">
-        <!-- Українською: Тематична група контенту / English: Thematic content group -->
-        <div class="container">
-          <!-- Українською: Універсальний контейнер / English: Universal container -->
-          <h2 class="portfolio-title" id="page-section-id">Our Portfolio</h2>
-          <ul class="portfolio-list">
-            <!-- Українською: Ненумерований список / English: Unordered List -->
-            <li class="portfolio-item thumb">
-              <!-- Українською: Елемент списку / English: List item -->
-              <img
-                class="portfolio-img"
-                src="./images/img-11.jpg"
-                alt="Mobile banking app interface design showing purple-themed BankApp with multiple screens including login, dashboard, transactions, and analytics views displayed on smartphone mockups"
-                width="360"
-                height="300">
-              <!-- Українською: Зображення / English: Image -->
-              <div class="portfolio-descr">
-                <!-- Українською: Універсальний контейнер / English: Universal container -->
-                <h3 class="portfolio-subtitle">
-                  <!-- Українською: Заголовок 3 рівня / English: Heading level 3 -->
-                  Banking App
-                </h3>
-                <p class="portfolio-text">
-                  <!-- Українською: Абзац / English: Paragraph -->
-                  App
-                </p>
-              </div>
-            </li>
-            <li class="portfolio-item thumb">
-              <!-- Українською: Елемент списку / English: List item -->
-              <img
-                class="portfolio-img"
-                src="./images/img-12.jpg"
-                alt="Hand holding smartphone displaying QR code scanner interface next to payment terminal device for contactless mobile payment transaction"
-                width="360"
-                height="300">
-              <!-- Українською: Зображення / English: Image -->
-              <div class="portfolio-descr">
-                <!-- Українською: Універсальний контейнер / English: Universal container -->
-                <h3 class="portfolio-subtitle">
-                  <!-- Українською: Заголовок 3 рівня / English: Heading level 3 -->
-                  Cashless Payment
-                </h3>
-                <p class="portfolio-text">
-                  <!-- Українською: Абзац / English: Paragraph -->
-                  Marketing
-                </p>
-              </div>
-            </li>
-            <li class="portfolio-item thumb">
-              <!-- Українською: Елемент списку / English: List item -->
-              <img
-                class="portfolio-img"
-                src="./images/img-13.jpg"
-                alt="Laptop and smartphone displaying matching gradient website design with 'Return to Normalcy' heading and modern UI elements in orange and blue colors"
-                width="360"
-                height="300">
-              <!-- Українською: Зображення / English: Image -->
-              <div class="portfolio-descr">
-                <!-- Українською: Універсальний контейнер / English: Universal container -->
-                <h3 class="portfolio-subtitle">
-                  <!-- Українською: Заголовок 3 рівня / English: Heading level 3 -->
-                  Meditation App
-                </h3>
-                <p class="portfolio-text">
-                  <!-- Українською: Абзац / English: Paragraph -->
-                  App
-                </p>
-              </div>
-            </li>
-            <li class="portfolio-item thumb">
-              <!-- Українською: Елемент списку / English: List item -->
-              <img
-                class="portfolio-img"
-                src="./images/img-14.jpg"
-                alt="Interior view of car dashboard with smartphone mounted on holder showing navigation app while driving, hands on steering wheel visible"
-                width="360"
-                height="300">
-              <!-- Українською: Зображення / English: Image -->
-              <div class="portfolio-descr">
-                <!-- Українською: Універсальний контейнер / English: Universal container -->
-                <h3 class="portfolio-subtitle">
-                  <!-- Українською: Заголовок 3 рівня / English: Heading level 3 -->
-                  Taxi Service
-                </h3>
-                <p class="portfolio-text">
-                  <!-- Українською: Абзац / English: Paragraph -->
-                  Marketing
-                </p>
-              </div>
-            </li>
-            <li class="portfolio-item thumb">
-              <!-- Українською: Елемент списку / English: List item -->
-              <img
-                class="portfolio-img"
-                src="./images/img-15.jpg"
-                alt="Smartphone lock screen showing time 09:25 with mystical blue moon landscape wallpaper, alongside collection of similar fantasy-themed mobile wallpapers"
-                width="360">
-              <!-- Українською: Зображення / English: Image -->
-              <div class="portfolio-descr">
-                <!-- Українською: Універсальний контейнер / English: Universal container -->
-                <h3 class="portfolio-subtitle">
-                  <!-- Українською: Заголовок 3 рівня / English: Heading level 3 -->
-                  Screen Illustrations
-                </h3>
-                <p class="portfolio-text">
-                  <!-- Українською: Абзац / English: Paragraph -->
-                  Design
-                </p>
-              </div>
-            </li>
-            <li class="portfolio-item thumb">
-              <!-- Українською: Елемент списку / English: List item -->
-              <img
-                class="portfolio-img"
-                src="./images/img-16.jpg"
-                alt="Smiling young woman wearing gray beanie and orange knit sweater, holding smartphone while walking outdoors in urban setting with yellow-tinted sunglasses"
-                width="360"
-                height="300">
-              <!-- Українською: Зображення / English: Image -->
-              <div class="portfolio-descr">
-                <!-- Українською: Універсальний контейнер / English: Universal container -->
-                <h3 class="portfolio-subtitle">
-                  <!-- Українською: Заголовок 3 рівня / English: Heading level 3 -->
-                  Online Courses
-                </h3>
-                <p class="portfolio-text">
-                  <!-- Українською: Абзац / English: Paragraph -->
-                  Marketing
-                </p>
-              </div>
-            </li>
-          </ul>
-        </div>
+        <h2 class="section-title" id="programs">
+          <!-- Українською: Заголовок 2 рівня / English: Heading level 2 -->
+          How to stop doubting and start exercising regularly
+        </h2>
+        <p class="section-text">
+          <!-- Українською: Абзац / English: Paragraph -->
+          Thousands of people dream about having a nice body. They start doing sport, face
+          challenges and quit it in a few weeks or even days. Why does it happen? The problem is
+          that people often do too much physical activity when their body is not ready for this
+          load. Without allowing any recovery time between exercise sessions, they get tired quickly
+          and lose motivation. We believe that you should have a smooth start and focus on
+          developing a habit of doing sport regularly. So, we offer you a few training programs for
+          beginners.
+        </p>
+        <ul class="downloads">
+          <!-- Українською: Ненумерований список / English: Unordered List -->
+          <li class="unordered-list">
+            <!-- Українською: Елемент списку / English: List item -->
+            <a
+              href="https://ac.goit.global/fullstack/html-css-v2/module-1/autocheck/Build-Muscles.pdf"
+              class="link"
+              target="_blank"
+              rel="noopener"
+              download="build-muscles-plan">
+              <!-- Українською: Гіперпосилання / English: Hyperlink -->
+              Download
+              <span class="plan-name">«Build Muscles»</span>
+              training plan
+            </a>
+          </li>
+          <li class="unordered-list">
+            <!-- Українською: Елемент списку / English: List item -->
+            <a
+              href="https://ac.goit.global/fullstack/html-css-v2/module-1/autocheck/Burn-Fat.pdf"
+              class="link"
+              target="_blank"
+              rel="noopener"
+              download="burn-fat-plan">
+              <!-- Українською: Гіперпосилання / English: Hyperlink -->
+              Download
+              <span class="plan-name">«Burn Fat»</span>
+              training plan
+            </a>
+          </li>
+          <li class="unordered-list">
+            <!-- Українською: Елемент списку / English: List item -->
+            <a
+              href="https://ac.goit.global/fullstack/html-css-v2/module-1/autocheck/Build-Strength&Mass.pdf"
+              class="link"
+              target="_blank"
+              rel="noopener"
+              download="strength-and-mass-plan">
+              <!-- Українською: Гіперпосилання / English: Hyperlink -->
+              Download «Build Strength and Mass» training plan
+            </a>
+          </li>
+        </ul>
       </section>
     </main>
     <!--!!! FOOTER !!!-->
-    <footer class="footer">
+    <footer class="page-footer">
       <!-- Українською: Нижня частина сторінки (копірайт, посилання) / English: Bottom section (copyright, links) -->
       <div class="container">
         <!-- Українською: Універсальний контейнер / English: Universal container -->
-        <!-- !!!Logo!!! -->
-        <a class="footer-logo" href="./index.html" target="_self" rel="noopener"
-          >Web<span class="accent-footer">Studio</span></a
-        >
-        <p class="footer-text">
+        <ul class="social-links">
+          <!-- Українською: Ненумерований список / English: Unordered List -->
+          <li class="social-links-list">
+            <!-- Українською: Елемент списку / English: List item -->
+            <a href="https://www.instagram.com/" class="link" target="_blank" rel="noopener">
+              <!-- Українською: Гіперпосилання / English: Hyperlink -->
+              <img
+                src="https://ac.goit.global/fullstack/html-css-v2/module-1/autocheck/b04insta.svg"
+                alt="Instagram"
+                class="image"
+                width="32"
+                height="32"
+                loading="lazy">
+              <!-- Українською: Зображення / English: Image -->
+            </a>
+          </li>
+          <li class="social-links-list">
+            <!-- Українською: Елемент списку / English: List item -->
+            <a href="https://www.facebook.com/" class="link" target="_blank" rel="noopener">
+              <!-- Українською: Гіперпосилання / English: Hyperlink -->
+              <img
+                src="https://ac.goit.global/fullstack/html-css-v2/module-1/autocheck/b04facebook.svg"
+                alt="Facebook"
+                class="image"
+                width="32"
+                height="32"
+                loading="lazy">
+              <!-- Українською: Зображення / English: Image -->
+            </a>
+          </li>
+          <li class="social-links-list">
+            <!-- Українською: Елемент списку / English: List item -->
+            <a href="https://www.youtube.com/" class="link" target="_blank" rel="noopener">
+              <!-- Українською: Гіперпосилання / English: Hyperlink -->
+              <img
+                src="https://ac.goit.global/fullstack/html-css-v2/module-1/autocheck/b04youtube.svg"
+                alt="YouTube"
+                class="image"
+                width="32"
+                height="32"
+                loading="lazy">
+              <!-- Українською: Зображення / English: Image -->
+            </a>
+          </li>
+        </ul>
+        <p class="copyright-text">
           <!-- Українською: Абзац / English: Paragraph -->
-          Increase the flow of customers and sales for your business with digital marketing & growth
-          solutions.
+          &copy;2023 ARST Planet Fatness, Ltd. All rights reserved. Unless otherwise indicated, all
+          materials on the page are copyrighted by ARST Planet Fatness, Limited. All rights
+          reserved. No part of this page, either text or image may be used for any purpose.
         </p>
       </div>
-      <!-- Українською: Універсальний контейнер / English: Universal container -->
     </footer>
+    <!--!!! SCRIPT !!!-->
+    <script src="js/app.js" defer></script>
+    <!-- Українською: Підключення JavaScript з відкладеним виконанням / English: JavaScript with deferred execution -->
   </body>
 </html>
