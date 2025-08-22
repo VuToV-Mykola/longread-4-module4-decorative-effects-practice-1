@@ -174,6 +174,16 @@ img {
   color: #03a9f4;
 }
 
+.social-links .link {
+  background-color: #03a9f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
 .page-nav .link:hover,
 .page-nav .link:focus {
   color: #0288d1;
@@ -186,7 +196,12 @@ img {
 .hero {
   color: #fff;
   background-color: #212121;
-  background-image: url("https://ac.goit.global/fullstack/html-css-v2/module-4/autochecks/m04-human.jpg");
+  background-image:
+    linear-gradient(to bottom, rgb(0 0 255 / 15%), rgb(0 0 255 / 15%)),
+    url("https://ac.goit.global/fullstack/html-css-v2/module-4/autochecks/m04-human.jpg");
+
+  background-position: center center;
+  background-size: cover;
   background-repeat: no-repeat;
   padding: 48px;
   border-radius: 12px;
@@ -196,8 +211,24 @@ img {
   font-size: 32px;
   line-height: 1.333;
   letter-spacing: 3px;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
   margin-bottom: 24px;
+}
+
+.hero-title::before,
+.hero-title::after {
+  background-color: #fff;
+  width: 100px;
+  height: 2px;
+  content: "";
+}
+
+.hero-title:hover::before,
+.hero-title:hover::after {
+  background-color: #03a9f4;
 }
 
 .section {
@@ -218,20 +249,35 @@ img {
 .club-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 12px;
+  gap: 16px;
 }
 
 .club-list .item {
-  flex-basis: calc((100% - 24px) / 3);
+  position: relative;
+  flex-basis: calc((100% - 32px) / 3);
   overflow: hidden;
   border-radius: 8px;
+  box-shadow:
+    0 3px 3px -2px rgb(0 0 0 / 20%),
+    0 3px 4px 0 rgb(0 0 0 / 14%),
+    0 1px 8px 0 rgb(0 0 0 / 12%);
+}
+
+.club-list .content {
+  padding: 8px;
 }
 
 .club-list .title {
   font-size: 16px;
   line-height: 1.333;
   text-transform: uppercase;
+  color: #fff;
+  background-color: #212121;
+  position: absolute;
+  top: 0;
+  right: 0;
   margin-bottom: 8px;
+  padding: 8px 12px;
 }
 
 .club-list .link:hover,
@@ -300,4 +346,16 @@ img {
   flex-shrink: 0;
   gap: 8px;
   align-self: flex-end;
+}
+
+.social-links .link:hover {
+  background-color: #fff;
+}
+
+.social-links .icon {
+  fill: #fff;
+}
+
+.social-links .link:hover .icon {
+  fill: #03a9f4;
 }
