@@ -1,86 +1,3 @@
-/* !!! body !!!
-body {
-  font-family: var(--primary-font);
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  text-align: center;
-  color: var(--slate);
-
-  background-color: var(--color-white);
-} */
-
-/* Якщо вам важко запам’ятати, де використовувати падінг, а де маржин, під час верстки задавайте всім елементам колір фону, адже він поширюється тільки на вміст, падінг і рамку, але не на маржини. Так буде візуально зрозуміло. Після того, як верстка виконана, видаліть із CSS-правил допоміжні властивості кольору фона. */
-
-/*  Не використовувати верхній марджин!
-div {
-  margin-bottom: 20px;
-} */
-
-/*  Відцентрувати елемент!
-div {
-  margin: 0 auto;
-} */
-
-/* У CSS створюється клас, зазвичай container, який можна задати будь-якому елементу, але на практиці це найчастіше буде тег <div> . Контейнеру обов'язково задаються
-ширина за макетом
-автоматичні горизонтальні маржини та
-необов'язкові горизонтальні падінги, також згідно макету.
-
-.container {
-  width: 480px;
-  margin: 0 auto;
-  padding: 0 15px;
-} */
-
-/* img {
-	display: block;
-  max-width: 100%;
-} */
-
-/* .thumb {
-  height: 400px;
-  width: 300px;
-} */
-
-/* .thumb img {
-  height: 100%;
-  width: 100%;
-	object-fit: cover;
-} */
-
-/* .card-set {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-} */
-
-/* 100% - кількість_проміжків_у_рядку * значення_одного_проміжку) / кількість_елементів_у_рядку */
-
-/* .item {
-  width: calc((100% - 20px) / 3);
-} */
-
-/* .page-container {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-} */
-
-/* !! + !! */
-
-/* main {
-  flex-grow: 1;
-} */
-
-/* Для елементів списків */
-
-/* .list-item:not(:last-child) {
-  margin-bottom: 20px;
-} */
-
-/* !!! logo !!! */
 *,
 *::before,
 *::after {
@@ -137,6 +54,10 @@ img {
 
 .page-header {
   background-color: #e0e0e0;
+  background-image: linear-gradient(to right, #03a9f4, #212121);
+  position: sticky;
+  top: 0;
+  z-index: 999;
   margin-bottom: 20px;
   padding-top: 16px;
   padding-bottom: 16px;
@@ -148,25 +69,6 @@ img {
   align-items: center;
 }
 
-.page-nav {
-  display: flex;
-  gap: 8px;
-}
-
-.page-nav .link {
-  font-size: 14px;
-  text-decoration: none;
-  text-transform: uppercase;
-  color: #03a9f4;
-  display: block;
-  padding: 4px 8px;
-}
-
-.downloads .link {
-  text-decoration: none;
-  color: #03a9f4;
-}
-
 .club-list .link {
   font-size: 14px;
   font-weight: 500;
@@ -174,23 +76,33 @@ img {
   color: #03a9f4;
 }
 
-.social-links .link {
-  background-color: #03a9f4;
+.downloads .link {
+  text-decoration: none;
+  color: #03a9f4;
+}
+
+.page-nav {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
+  gap: 8px;
+}
+
+.page-nav .link {
+  transition:
+    background-color 150ms ease-in-out 150ms,
+    color 150ms ease-in-out 0ms;
+  font-size: 14px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  display: block;
+  padding: 4px 8px;
 }
 
 .page-nav .link:hover,
-.page-nav .link:focus {
-  color: #0288d1;
-}
-
+.page-nav .link:focus,
 .page-nav .link:active {
   color: #f44336;
+  background-color: #fff;
 }
 
 .hero {
@@ -198,8 +110,7 @@ img {
   background-color: #212121;
   background-image:
     linear-gradient(to bottom, rgb(0 0 255 / 15%), rgb(0 0 255 / 15%)),
-    url("https://ac.goit.global/fullstack/html-css-v2/module-4/autochecks/m04-human.jpg");
-
+    url("https://cdn.pixabay.com/photo/2016/11/22/22/24/adult-1850925_1280.jpg");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -246,6 +157,11 @@ img {
   margin-bottom: 20px;
 }
 
+.section-text {
+  line-height: 1.5;
+  text-indent: 24px;
+}
+
 .club-list {
   display: flex;
   flex-wrap: wrap;
@@ -272,7 +188,7 @@ img {
   line-height: 1.333;
   text-transform: uppercase;
   color: #fff;
-  background-color: #212121;
+  background-color: #0288d1;
   position: absolute;
   top: 0;
   right: 0;
@@ -289,16 +205,6 @@ img {
   color: #f44336;
 }
 
-.downloads .link:hover,
-.downloads .link:focus {
-  text-decoration: underline;
-  color: #0288d1;
-}
-
-.downloads .link:active {
-  color: #f44336;
-}
-
 .benefits {
   display: flex;
   flex-wrap: wrap;
@@ -309,23 +215,31 @@ img {
   list-style: none;
 }
 
-.benefits .item {
+.benefits li {
   flex-basis: calc((100% - 32px) / 3);
 }
 
 .downloads {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
   margin-top: 20px;
 }
 
-.downloads .item:not(:last-child) {
+.downloads li:not(:last-child) {
   margin-bottom: 8px;
+}
+
+.downloads .link:hover,
+.downloads .link:focus {
+  text-decoration: underline;
+  color: #0288d1;
+}
+
+.downloads .link:active {
+  color: #f44336;
 }
 
 .page-footer {
   background-color: #212121;
+  margin-top: 20px;
   padding-top: 20px;
   padding-bottom: 20px;
 }
@@ -348,14 +262,24 @@ img {
   align-self: flex-end;
 }
 
-.social-links .link:hover {
-  background-color: #fff;
+.manager-chat-btn {
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #03a9f4;
+  position: fixed;
+  right: 32px;
+  bottom: 32px;
+  z-index: 999;
+  padding: 12px 16px;
+  border: none;
+  border-radius: 4px;
+  box-shadow:
+    rgb(0 0 0 / 20%) 0 3px 1px -2px,
+    rgb(0 0 0 / 14%) 0 2px 2px 0,
+    rgb(0 0 0 / 12%) 0 1px 5px 0;
+  cursor: pointer;
 }
 
-.social-links .icon {
-  fill: #fff;
-}
-
-.social-links .link:hover .icon {
-  fill: #03a9f4;
+.manager-chat-btn:hover {
+  background-color: #0288d1;
 }

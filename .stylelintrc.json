@@ -19,12 +19,13 @@
     "selector-id-pattern": "^[a-z]([a-z0-9-]+)?$",
 
     "property-no-unknown": true,
-    "unit-allowed-list": ["em", "rem", "%", "s", "px", "deg", "vh", "vw"],
+    "unit-allowed-list": ["em", "rem", "%", "s", "px", "deg", "vh", "vw", "ms"],
     "no-descending-specificity": true,
     "max-nesting-depth": 3,
     "number-max-precision": 4,
     "at-rule-no-vendor-prefix": true,
     "media-feature-name-no-unknown": true,
+    "time-min-milliseconds": 100,
 
     "order/order": [
       "custom-properties",
