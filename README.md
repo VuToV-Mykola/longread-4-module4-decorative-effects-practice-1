@@ -6,7 +6,4 @@
 [![⭐ Stars](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/VuToV-Mykola/longread-4-module4-decorative-effects-practice-1/main/assets/db/likes-badge.json)](https://github.com/VuToV-Mykola/longread-4-module4-decorative-effects-practice-1/actions/workflows/screenshot-and-visitor.yaml)
 [![📦 Size](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/VuToV-Mykola/longread-4-module4-decorative-effects-practice-1/main/assets/db/repo-size.json)](https://github.com/VuToV-Mykola/longread-4-module4-decorative-effects-practice-1)
 [![📄 License](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/VuToV-Mykola/longread-4-module4-decorative-effects-practice-1/main/assets/db/repo-license.json)](https://github.com/VuToV-Mykola/longread-4-module4-decorative-effects-practice-1/blob/main/LICENSE)
-
-## 📸 Скріншот проекту
-![Project Screenshot](./assets/screenshot.png)
 <!-- END:AUTOGEN -->
